@@ -116,7 +116,6 @@ original game; save files from the unpatched version remain compatible.
 ## 5. Tested on
 
 - Emulator: **ares**
-- [Add any additional hardware / emulator testing here before publishing]
 
 Version 1.1's text content was additionally verified by reconstructing the ROM from
 the disassembly source and diffing it byte-for-byte against the fully reviewed 1.0
