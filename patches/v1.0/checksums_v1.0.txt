@@ -1,0 +1,34 @@
+Phantasy Star III: Generations of Doom - Deutsche Uebersetzung
+Version 1.0 - 04.08.2026
+
+--------------------------------------------------------------------------------
+Patch-Datei
+--------------------------------------------------------------------------------
+Datei:   PSIII_German_v1.0.bps
+Format:  BPS
+Groesse: 39633 Bytes
+
+MD5:     0f755e9a55772f18bdb47165cfa5e5a8
+SHA-1:   c7891173b8a2c74beaa48cad06c97edbc1d556dd
+
+--------------------------------------------------------------------------------
+Benoetigtes Original-ROM (unveraendert)
+--------------------------------------------------------------------------------
+Groesse: 786.432 Bytes
+CRC32:   C6B42B0F
+MD5:     82c7bc027685cc8fc6c9e077beb1a75a
+SHA-1:   59d4914e652672fd1e453c76b8250d17e8ca154e
+
+--------------------------------------------------------------------------------
+Ergebnis nach dem Patchen
+--------------------------------------------------------------------------------
+Groesse: 786.432 Bytes
+CRC32:   C4349C75
+MD5:     88b5040748a5afaaa8eba659990df324
+SHA-1:   a1830b5d3755ac09e08b0fc86acd5bfbc5cc43f7
+Interne Mega-Drive-Pruefsumme: 3442
+
+Verifiziert: der Patch wurde mit einem unabhaengigen BPS-Referenzdecoder gegen die
+Original-ROM angewendet. Alle drei im Patch hinterlegten CRC32-Pruefsummen (Quelle,
+Ziel, Patch selbst) sowie das Patch-Ergebnis stimmen exakt mit den in der
+urspruenglichen v1.0-Readme dokumentierten Werten ueberein.
