@@ -154,8 +154,9 @@ supply your own copy of the game.
   The ROM has been expanded from 768 KB to 1 MB to make room for the new
   code. The header (ROM end address) and the internal Mega Drive checksum
   have been updated and are valid (F9F4), so the ROM passes the console's
-  own integrity check. 1 MB needs no mapper and works in all common
-  emulators and on flash carts.
+  own integrity check. 1 MB needs no mapper. Version 1.2 was tested in
+  emulators only; it has not been tested on original hardware or flash
+  carts.
 
   Save games: the SRAM configuration is unchanged. The options and macros
   use previously unused bytes of the save slot.
@@ -218,7 +219,9 @@ supply your own copy of the game.
                                           custom script tooling
 
   The original SEGA staff credits are preserved in full. No developer
-  has been removed from or replaced in the in-game credit roll.
+  has been removed from or replaced in the in-game credit roll. Since
+  version 1.2, the opening and end credits additionally list "Deutsche
+  Lokalisierung / Karlhungus" before "Presented by Sega Enterprises".
 
   Thanks to the ROMhacking.net community for the documentation and
   utilities that made a first project like this possible. The battle
@@ -252,9 +255,11 @@ supply your own copy of the game.
   v1.2  -  01.11.2026  -  Comfort menu on START: random battles on/off,
                           EXP/Meseta x1/x2/x4, walking speed, battle macro
                           editor (4 slots, own "M" field in battle); battle
-                          speed-up (hold A); ROM expanded to 1 MB; fixed
-                          shifted text speed window after "continue"
-                          (bug of the original game)
+                          speed-up (hold A); credits list "Deutsche
+                          Lokalisierung / Karlhungus" in opening and end
+                          credits; ROM expanded to 1 MB; fixed shifted
+                          text speed window after "continue" (bug of the
+                          original game)
   v1.1  -  30.08.2026  -  Real umlauts and eszett throughout (replacing
                           ae/oe/ue/ss); fixed cut-off dialogue box in the
                           wedding scene; revised bride-selection phrasing
@@ -395,8 +400,8 @@ Komfortfunktionen in Version 1.2.
   Das ROM wurde fuer den neuen Code von 768 KB auf 1 MB erweitert. Header
   (ROM-Ende) und interne Mega-Drive-Pruefsumme wurden angepasst und sind
   gueltig (F9F4), das ROM besteht die Integritaetspruefung der Konsole.
-  1 MB braucht keinen Mapper und laeuft in allen gaengigen Emulatoren
-  und auf Flashcarts.
+  1 MB braucht keinen Mapper. Version 1.2 wurde nur in Emulatoren getestet;
+  auf Originalhardware und Flashcarts ist sie nicht getestet.
 
   Spielstaende: Die SRAM-Konfiguration ist unveraendert. Optionen und
   Makros liegen in bisher ungenutzten Bytes des Speicherplatzes.
@@ -428,7 +433,9 @@ Komfortfunktionen in Version 1.2.
 
   Die Original-Credits des SEGA-Entwicklerteams sind vollstaendig
   erhalten. Es wurde kein Entwickler aus dem Abspann entfernt oder
-  ersetzt. Die Kampf-Makros sind an Phantasy Star IV angelehnt.
+  ersetzt. Seit Version 1.2 nennen Vor- und Abspann zusaetzlich
+  "Deutsche Lokalisierung / Karlhungus" vor "Presented by Sega
+  Enterprises". Die Kampf-Makros sind an Phantasy Star IV angelehnt.
 
 
 --------------------------------------------------------------------------------
@@ -459,9 +466,11 @@ Komfortfunktionen in Version 1.2.
   v1.2  -  01.11.2026  -  Komfortmenue auf START: Zufallskaempfe an/aus,
                           EXP/Meseta x1/x2/x4, Lauftempo, Makro-Editor
                           (4 Plaetze, im Kampf eigenes Feld "M"); Kampf-
-                          Turbo (A halten); ROM auf 1 MB erweitert;
-                          verschobenes Textgeschwindigkeits-Fenster nach
-                          "Spiel fortsetzen" behoben (Fehler des Originals)
+                          Turbo (A halten); Credits "Deutsche
+                          Lokalisierung / Karlhungus" in Vor- und Abspann;
+                          ROM auf 1 MB erweitert; verschobenes
+                          Textgeschwindigkeits-Fenster nach "Spiel
+                          fortsetzen" behoben (Fehler des Originals)
   v1.1  -  30.08.2026  -  Echte Umlaute und Eszett durchgaengig (statt
                           ae/oe/ue/ss); abgeschnittene Textbox in der
                           Hochzeitsszene behoben; Braeute-Auswahl-Text
