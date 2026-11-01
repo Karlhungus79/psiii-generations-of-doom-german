@@ -63,6 +63,10 @@ as the normal pause button.
   Battle speed-up: hold the A button during battle and the battle runs
   at double speed. Release A for normal speed.
 
+  Credits: the opening credits and the end credits now list
+  "Deutsche Lokalisierung / Karlhungus" (German localization) before
+  "Presented by Sega Enterprises".
+
   Using macros in battle: next to the battle command menu (Auto / One
   round / Orders / Escape) there is a separate field "M" showing the
   current macro slot. Move the cursor right from the Orders icon onto
@@ -143,13 +147,13 @@ supply your own copy of the game.
   After patching, the file should match these values:
 
   Size:          1.048.576 bytes  (1 MB / 8 Mbit)
-  CRC32:         C9E3240F
-  MD5:           4786de489e10c86d7d8508f3222f3c49
-  SHA-1:         2d6c340d60ffb923e8789d8dacec26d9fe5d57c1
+  CRC32:         2298B4CD
+  MD5:           4b579110261c890ff6348dddc65eacd2
+  SHA-1:         e2a1844bc46b5f86536018894ed07b0d7c5bc453
 
   The ROM has been expanded from 768 KB to 1 MB to make room for the new
   code. The header (ROM end address) and the internal Mega Drive checksum
-  have been updated and are valid (065A), so the ROM passes the console's
+  have been updated and are valid (F9F4), so the ROM passes the console's
   own integrity check. 1 MB needs no mapper and works in all common
   emulators and on flash carts.
 
@@ -160,9 +164,9 @@ supply your own copy of the game.
     - Saves from 1.2 also load in 1.0 / 1.1 (the extra data is ignored).
 
   Patch file itself:
-  Size:          45.605 bytes
-  MD5:           9431b6721133006a1c859d06bb153613
-  SHA-1:         a1d76b70576b0ac96320eea3e4745d1ba0544f6c
+  Size:          45.840 bytes
+  MD5:           f8188cd6b8e0dec3ac8b03e7268b2d5e
+  SHA-1:         4e14f2f9eaa6fcb09b7a4725ec49b0d774469d8a
 
 
 --------------------------------------------------------------------------------
@@ -179,7 +183,7 @@ supply your own copy of the game.
   dialogue, persistence across new game / save / continue, walking speed
   and party followers, random battles on/off, the EXP/Meseta multiplier,
   the battle speed-up and all battle macro functions. Text and all game
-  data outside the 14 patched code locations are byte-identical to 1.1.
+  data outside the 17 patched code locations are byte-identical to 1.1.
   The ROM is built from the disassembly source with the Macroassembler
   AS.
 
@@ -311,6 +315,9 @@ die normale Pausetaste.
   Kampf-Turbo: A-Taste im Kampf gedrueckt halten, der Kampf laeuft
   doppelt so schnell. A loslassen = normales Tempo.
 
+  Credits: Im Vorspann und im Abspann steht jetzt "Deutsche
+  Lokalisierung / Karlhungus" vor "Presented by Sega Enterprises".
+
   Makros im Kampf: im Kampf-Befehlsmenue (Auto / Eine Runde /
   Einzelbefehle / Flucht) liegt rechts ein eigenes Feld "M" mit der
   aktuellen Makro-Nummer. Cursor vom Einzelbefehle-Symbol nach rechts
@@ -381,13 +388,13 @@ Komfortfunktionen in Version 1.2.
   Nach dem Patchen sollte die Datei diese Werte aufweisen:
 
   Groesse:       1.048.576 Bytes  (1 MB / 8 Mbit)
-  CRC32:         C9E3240F
-  MD5:           4786de489e10c86d7d8508f3222f3c49
-  SHA-1:         2d6c340d60ffb923e8789d8dacec26d9fe5d57c1
+  CRC32:         2298B4CD
+  MD5:           4b579110261c890ff6348dddc65eacd2
+  SHA-1:         e2a1844bc46b5f86536018894ed07b0d7c5bc453
 
   Das ROM wurde fuer den neuen Code von 768 KB auf 1 MB erweitert. Header
   (ROM-Ende) und interne Mega-Drive-Pruefsumme wurden angepasst und sind
-  gueltig (065A), das ROM besteht die Integritaetspruefung der Konsole.
+  gueltig (F9F4), das ROM besteht die Integritaetspruefung der Konsole.
   1 MB braucht keinen Mapper und laeuft in allen gaengigen Emulatoren
   und auf Flashcarts.
 

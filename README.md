@@ -22,6 +22,8 @@ dialogue, menus and vehicles. All settings are stored in the save game.
   party member) in the START menu. In battle, a separate "M" field next to the command
   menu opens a list of the macros; choose one and press C to run it for one round
 - **Battle speed-up:** hold A in battle for double speed
+- **Credits:** the opening and end credits now list "Deutsche Lokalisierung / Karlhungus"
+  (German localization) before "Presented by Sega Enterprises"
 - **Fixed:** the text speed selection after "Continue" was drawn shifted and cut off
   (a bug of the original game, also in the English version)
 - ROM expanded from 768 KB to 1 MB; save games stay compatible with 1.0 / 1.1 in both
@@ -118,10 +120,10 @@ After patching, the file should match these values:
 | | |
 |---|---|
 | Size | 1,048,576 bytes (1 MB, expanded for the new code) |
-| CRC32 | `C9E3240F` |
-| MD5 | `4786de489e10c86d7d8508f3222f3c49` |
-| SHA-1 | `2d6c340d60ffb923e8789d8dacec26d9fe5d57c1` |
-| Internal Mega Drive header checksum | `065A` (valid) |
+| CRC32 | `2298B4CD` |
+| MD5 | `4b579110261c890ff6348dddc65eacd2` |
+| SHA-1 | `e2a1844bc46b5f86536018894ed07b0d7c5bc453` |
+| Internal Mega Drive header checksum | `F9F4` (valid) |
 
 Full checksum details, including the patch file's own hashes, are in
 [`patches/v1.2/checksums_v1.2.txt`](patches/v1.2/checksums_v1.2.txt). The version 1.0
@@ -140,7 +142,7 @@ the save slot, which 1.0 / 1.1 simply ignore.
 - Emulator: **Genesis Plus GX** (automated feature tests of version 1.2)
 - Not tested on original hardware or flash carts.
 
-Version 1.2's German text and all data outside the 14 patched code locations are
+Version 1.2's German text and all data outside the 17 patched code locations are
 byte-identical to 1.1. The ROM is built from the disassembly source with the
 Macroassembler AS — see the changelog for details.
 
@@ -262,10 +264,10 @@ Nach dem Patchen sollte die Datei diese Werte aufweisen:
 |  |  |
 |---|---|
 | Größe | 1.048.576 Bytes (1 MB) |
-| CRC32 | `C9E3240F` |
-| MD5 | `4786de489e10c86d7d8508f3222f3c49` |
-| SHA-1 | `2d6c340d60ffb923e8789d8dacec26d9fe5d57c1` |
-| Interne Mega-Drive-Prüfsumme | `065A` (gültig) |
+| CRC32 | `2298B4CD` |
+| MD5 | `4b579110261c890ff6348dddc65eacd2` |
+| SHA-1 | `e2a1844bc46b5f86536018894ed07b0d7c5bc453` |
+| Interne Mega-Drive-Prüfsumme | `F9F4` (gültig) |
 
 Die SRAM-Konfiguration ist unverändert, Batteriespeicherstände funktionieren wie im
 Original und bleiben mit 1.0 und 1.1 in beide Richtungen kompatibel.
@@ -281,6 +283,7 @@ Pausetaste. Alle Einstellungen werden im Spielstand gespeichert.
 - Kampf-Makros: 4 Plätze mit vollem Editor im START-Menü; im Kampf öffnet das Feld "M"
   neben dem Befehlsmenü die Makro-Liste, C führt das gewählte Makro eine Runde lang aus
 - Kampf-Turbo: A im Kampf halten für doppeltes Tempo
+- Credits: Vorspann und Abspann nennen jetzt "Deutsche Lokalisierung / Karlhungus"
 - Behoben: Die Textgeschwindigkeits-Abfrage nach "Spiel fortsetzen" war verschoben und
   abgeschnitten (Fehler des Originals)
 

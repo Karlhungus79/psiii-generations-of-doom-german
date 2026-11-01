@@ -6,10 +6,10 @@ Patch-Datei
 --------------------------------------------------------------------------------
 Datei:   PSIII_German_v1.2.bps
 Format:  BPS
-Groesse: 45605 Bytes
+Groesse: 45840 Bytes
 
-MD5:     9431b6721133006a1c859d06bb153613
-SHA-1:   a1d76b70576b0ac96320eea3e4745d1ba0544f6c
+MD5:     f8188cd6b8e0dec3ac8b03e7268b2d5e
+SHA-1:   4e14f2f9eaa6fcb09b7a4725ec49b0d774469d8a
 
 (Hinweis: Der interne "Patch-CRC32" im BPS-Footer ist bei jeder gueltigen BPS-Datei
 immer der gleiche Wert 2144DF1C - das ist eine mathematische Eigenschaft von CRC32
@@ -27,10 +27,10 @@ SHA-1:   59d4914e652672fd1e453c76b8250d17e8ca154e
 Ergebnis nach dem Patchen
 --------------------------------------------------------------------------------
 Groesse: 1.048.576 Bytes (ROM auf 1 MB erweitert)
-CRC32:   C9E3240F
-MD5:     4786de489e10c86d7d8508f3222f3c49
-SHA-1:   2d6c340d60ffb923e8789d8dacec26d9fe5d57c1
-Interne Mega-Drive-Pruefsumme (Header 0x18E-0x18F): 065A
+CRC32:   2298B4CD
+MD5:     4b579110261c890ff6348dddc65eacd2
+SHA-1:   e2a1844bc46b5f86536018894ed07b0d7c5bc453
+Interne Mega-Drive-Pruefsumme (Header 0x18E-0x18F): F9F4
 ROM-Ende im Header (0x1A4-0x1A7): 000FFFFF
 
 Verifiziert: Der Patch wurde mit einem BPS-Decoder gegen das Original-ROM angewendet,

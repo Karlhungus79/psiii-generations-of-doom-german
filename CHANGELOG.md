@@ -24,6 +24,10 @@ Alle nennenswerten Änderungen an dieser Übersetzung stehen hier.
   werden beim Laden geprüft.*
 - Battle speed-up: hold A during battle for double speed.
   *Kampf-Turbo: A im Kampf halten für doppeltes Tempo.*
+- Credits: the opening credits and the end credits now list "Deutsche Lokalisierung /
+  Karlhungus" (German localization) before "Presented by Sega Enterprises".
+  *Credits: Vor- und Abspann nennen jetzt "Deutsche Lokalisierung / Karlhungus" vor
+  "Presented by Sega Enterprises".*
 
 ### Fixed / Behoben
 - Text speed selection after "Continue": the windows were drawn shifted and cut off,
@@ -40,9 +44,9 @@ Alle nennenswerten Änderungen an dieser Übersetzung stehen hier.
   *Spielstände bleiben in beide Richtungen kompatibel (1.0/1.1 ↔ 1.2).*
 
 ### Verification / Verifikation
-- German text and all data outside the 14 patched code locations are byte-identical
+- German text and all data outside the 17 patched code locations are byte-identical
   to 1.1.
-  *Deutscher Text und alle Daten außerhalb der 14 geänderten Codestellen sind
+  *Deutscher Text und alle Daten außerhalb der 17 geänderten Codestellen sind
   byte-identisch mit 1.1.*
 - ROM built from `ps3.asm` + `ps3.qol.asm` with the Macroassembler AS. All features
   verified in automated emulator runs, including test saves at ten story points of
