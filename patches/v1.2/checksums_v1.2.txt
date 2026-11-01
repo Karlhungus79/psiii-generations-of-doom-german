@@ -1,0 +1,40 @@
+Phantasy Star III: Generations of Doom - Deutsche Uebersetzung
+Version 1.2 (Komfortmenue) - 01.11.2026
+
+--------------------------------------------------------------------------------
+Patch-Datei
+--------------------------------------------------------------------------------
+Datei:   PSIII_German_v1.2.bps
+Format:  BPS
+Groesse: 45605 Bytes
+
+MD5:     9431b6721133006a1c859d06bb153613
+SHA-1:   a1d76b70576b0ac96320eea3e4745d1ba0544f6c
+
+(Hinweis: Der interne "Patch-CRC32" im BPS-Footer ist bei jeder gueltigen BPS-Datei
+immer der gleiche Wert 2144DF1C - das ist eine mathematische Eigenschaft von CRC32
+selbst, keine Dateikennung. Zur Identifikation der Datei bitte MD5/SHA-1 verwenden.)
+
+--------------------------------------------------------------------------------
+Benoetigtes Original-ROM (unveraendert)
+--------------------------------------------------------------------------------
+Groesse: 786.432 Bytes
+CRC32:   C6B42B0F
+MD5:     82c7bc027685cc8fc6c9e077beb1a75a
+SHA-1:   59d4914e652672fd1e453c76b8250d17e8ca154e
+
+--------------------------------------------------------------------------------
+Ergebnis nach dem Patchen
+--------------------------------------------------------------------------------
+Groesse: 1.048.576 Bytes (ROM auf 1 MB erweitert)
+CRC32:   C9E3240F
+MD5:     4786de489e10c86d7d8508f3222f3c49
+SHA-1:   2d6c340d60ffb923e8789d8dacec26d9fe5d57c1
+Interne Mega-Drive-Pruefsumme (Header 0x18E-0x18F): 065A
+ROM-Ende im Header (0x1A4-0x1A7): 000FFFFF
+
+Verifiziert: Der Patch wurde mit einem BPS-Decoder gegen das Original-ROM angewendet,
+alle drei im Patch hinterlegten CRC32-Pruefsummen (Quelle, Ziel, Patch) stimmen. Das
+Ergebnis ist byte-identisch mit dem ROM, das aus ps3.asm + ps3.qol.asm mit dem
+Macroassembler AS (build.bat-Kette: asw, ps3p2bin, fixheader) gebaut wird. Derselbe
+Decoder liefert mit dem Flips-Patch v1.1 exakt das bekannte v1.1-ROM.

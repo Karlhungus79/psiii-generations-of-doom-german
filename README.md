@@ -1,6 +1,6 @@
 # Phantasy Star III: Generations of Doom — German Translation
 
-**Version 1.1** · Release Date: 30.08.2026 · Author: **Karlhungus**
+**Version 1.2** · Release Date: 01.11.2026 · Author: **Karlhungus**
 Platform: Sega Mega Drive / Genesis
 
 > This is an unofficial fan translation. It is not affiliated with or endorsed by SEGA.
@@ -9,7 +9,25 @@ Platform: Sega Mega Drive / Genesis
 
 ---
 
-## What's new in 1.1
+## What's new in 1.2 (Quality-of-Life Edition)
+
+The German text is identical to 1.1. New is a comfort menu, opened with START on the
+field (towns, dungeons, world map); START stays the normal pause button in battle,
+dialogue, menus and vehicles. All settings are stored in the save game.
+
+- **Random battles** on / off (scripted and boss battles are not affected)
+- **EXP and Meseta** x1 / x2 / x4 for every battle won
+- **Walking speed** fast (default) / normal
+- **Battle macros:** 4 slots with a full editor (command, technique/item and target per
+  party member) in the START menu. In battle, a separate "M" field next to the command
+  menu opens a list of the macros; choose one and press C to run it for one round
+- **Battle speed-up:** hold A in battle for double speed
+- **Fixed:** the text speed selection after "Continue" was drawn shifted and cut off
+  (a bug of the original game, also in the English version)
+- ROM expanded from 768 KB to 1 MB; save games stay compatible with 1.0 / 1.1 in both
+  directions
+
+## What was new in 1.1
 
 - **Real German umlauts and ß** (ä ö ü Ä Ö Ü) throughout all dialogue and menu text,
   replacing the ae/oe/ue/ss transcription used in 1.0
@@ -48,7 +66,7 @@ limitation.
 This is my first ROM hacking project. I worked on it entirely on my own, using AI both
 for the translation itself and as technical support for script extraction, alignment
 of the German and English text blocks, the font/character-set work for version 1.1,
-and parts of the assembly work.
+and the assembly work, including the quality-of-life features of version 1.2.
 
 To check the result, I did not rely on spot tests: I recorded a complete Let's Play of
 the German version on my YouTube channel and played it through from start to finish
@@ -79,7 +97,7 @@ none will be provided. You must supply your own copy of the game.
 ## 3. How to patch
 
 - **Patch format:** BPS
-- **Patch file:** [`patches/v1.1/PSIII_German_v1.1.bps`](patches/v1.1/PSIII_German_v1.1.bps)
+- **Patch file:** [`patches/v1.2/PSIII_German_v1.2.bps`](patches/v1.2/PSIII_German_v1.2.bps)
 - **Recommended tool:** [Floating IPS (Flips)](https://www.romhacking.net/utilities/1040/)
 
 Steps:
@@ -99,31 +117,38 @@ After patching, the file should match these values:
 
 | | |
 |---|---|
-| Size | 786,432 bytes |
-| CRC32 | `DB81C2E3` |
-| MD5 | `d58ec62c1594a4aa0caed0f6fdce2035` |
-| SHA-1 | `b35737e8bf7b58a0f270fa121c7d7c036e97a2a2` |
-| Internal Mega Drive header checksum | `A9AE` (valid) |
+| Size | 1,048,576 bytes (1 MB, expanded for the new code) |
+| CRC32 | `C9E3240F` |
+| MD5 | `4786de489e10c86d7d8508f3222f3c49` |
+| SHA-1 | `2d6c340d60ffb923e8789d8dacec26d9fe5d57c1` |
+| Internal Mega Drive header checksum | `065A` (valid) |
 
 Full checksum details, including the patch file's own hashes, are in
-[`patches/v1.1/checksums_v1.1.txt`](patches/v1.1/checksums_v1.1.txt). The version 1.0
-patch and its checksums are kept in [`patches/v1.0/`](patches/v1.0/) for reference.
+[`patches/v1.2/checksums_v1.2.txt`](patches/v1.2/checksums_v1.2.txt). The version 1.0
+and 1.1 patches and their checksums are kept in [`patches/v1.0/`](patches/v1.0/) and
+[`patches/v1.1/`](patches/v1.1/) for reference. Version 1.2 applies to the unmodified
+original ROM only, not on top of 1.0 or 1.1.
 
-The patched ROM passes the console's own integrity check and runs on original
-hardware. SRAM configuration is unchanged, so battery saves work exactly as in the
-original game; save files from the unpatched version remain compatible.
+The patched ROM has a valid internal checksum. SRAM configuration is unchanged, so
+battery saves work as in the original game; save files from the unpatched version, 1.0
+and 1.1 remain compatible. The options and macros of 1.2 use previously unused bytes of
+the save slot, which 1.0 / 1.1 simply ignore.
 
 ## 5. Tested on
 
-- Emulator: **ares**
+- Emulator: **ares** (manual playtest)
+- Emulator: **Genesis Plus GX** (automated feature tests of version 1.2)
+- Not tested on original hardware or flash carts.
 
-Version 1.1's text content was additionally verified by reconstructing the ROM from
-the disassembly source and diffing it byte-for-byte against the fully reviewed 1.0
-build — see the changelog for details.
+Version 1.2's German text and all data outside the 14 patched code locations are
+byte-identical to 1.1. The ROM is built from the disassembly source with the
+Macroassembler AS — see the changelog for details.
 
 ## 6. Known issues
 
 - The ß glyph looks slightly B-like at the game's native 8×8 pixel resolution.
+- Battle macros store the orders per party position. If the party order changes (for
+  example when a new member joins), check your macros again.
 - The end credits remain in English (they use their own, separate character set).
 - No further issues are known at the time of release. Please report text bugs with a
   savestate or a description of where the passage appears (see [Contact](#9-contact)).
@@ -133,7 +158,7 @@ build — see the changelog for details.
 | | |
 |---|---|
 | Translation, hacking, testing | Karlhungus |
-| Quality assurance | full recorded playthrough (v1.0), rebuild/diff verification (v1.1) |
+| Quality assurance | full recorded playthrough (v1.0), rebuild/diff verification (v1.1), emulator tests (v1.2) |
 | Tools | Floating IPS (Flips), custom script tooling |
 
 The original SEGA staff credits are preserved in full. No developer has been removed
@@ -192,14 +217,15 @@ keine Einschränkung des Zeichensatzes mehr.
 Dies ist mein erstes ROM-Hacking-Projekt. Ich habe es vollständig alleine umgesetzt
 und dabei KI sowohl für die Übersetzung selbst als auch als technische Unterstützung
 eingesetzt — für die Extraktion des Skripts, die Zuordnung der deutschen und
-englischen Textblöcke, die Zeichensatz-Arbeit für Version 1.1 sowie Teile der
-Assembler-Arbeit.
+englischen Textblöcke, die Zeichensatz-Arbeit für Version 1.1 sowie die
+Assembler-Arbeit, auch für die Komfortfunktionen von Version 1.2.
 
 Zur Prüfung habe ich mich für Version 1.0 nicht auf Stichproben verlassen: Ich habe
 ein komplettes Let's Play dieser deutschen Fassung auf meinem YouTube-Kanal
 aufgenommen und das Spiel von Anfang bis Ende durchgespielt. Version 1.1 wurde durch
 Neubau des ROMs aus dem Quelltext und byteweisen Abgleich gegen den vollständig
-geprüften 1.0-Textstand verifiziert.
+geprüften 1.0-Textstand verifiziert. Version 1.2 bringt ein Komfortmenü (siehe unten);
+der deutsche Text ist identisch mit 1.1.
 
 https://www.youtube.com/@rgbretrogaming
 
@@ -223,7 +249,7 @@ und wird auch nicht bereitgestellt.
 ## 3. Anwendung
 
 1. Floating IPS (Flips) starten und "Apply Patch" wählen.
-2. Die `.bps`-Datei aus diesem Repository auswählen.
+2. Die `.bps`-Datei aus `patches/v1.2/` auswählen.
 3. Das unveränderte Phantasy Star III ROM auswählen.
 4. Ergebnis unter neuem Dateinamen speichern — das Original nicht überschreiben.
 
@@ -235,14 +261,28 @@ Nach dem Patchen sollte die Datei diese Werte aufweisen:
 
 |  |  |
 |---|---|
-| Größe | 786.432 Bytes |
-| CRC32 | `DB81C2E3` |
-| MD5 | `d58ec62c1594a4aa0caed0f6fdce2035` |
-| SHA-1 | `b35737e8bf7b58a0f270fa121c7d7c036e97a2a2` |
-| Interne Mega-Drive-Prüfsumme | `A9AE` (gültig) |
+| Größe | 1.048.576 Bytes (1 MB) |
+| CRC32 | `C9E3240F` |
+| MD5 | `4786de489e10c86d7d8508f3222f3c49` |
+| SHA-1 | `2d6c340d60ffb923e8789d8dacec26d9fe5d57c1` |
+| Interne Mega-Drive-Prüfsumme | `065A` (gültig) |
 
 Die SRAM-Konfiguration ist unverändert, Batteriespeicherstände funktionieren wie im
-Original und bleiben kompatibel.
+Original und bleiben mit 1.0 und 1.1 in beide Richtungen kompatibel.
+
+### Neu in 1.2 (Komfortmenü)
+
+START im Feld öffnet ein Menü. In Kampf, Dialog, Menüs und Fahrzeugen bleibt START die
+Pausetaste. Alle Einstellungen werden im Spielstand gespeichert.
+
+- Zufallskämpfe an / aus (Skript- und Bosskämpfe bleiben unberührt)
+- EXP und Meseta x1 / x2 / x4
+- Lauftempo schnell (Standard) / normal
+- Kampf-Makros: 4 Plätze mit vollem Editor im START-Menü; im Kampf öffnet das Feld "M"
+  neben dem Befehlsmenü die Makro-Liste, C führt das gewählte Makro eine Runde lang aus
+- Kampf-Turbo: A im Kampf halten für doppeltes Tempo
+- Behoben: Die Textgeschwindigkeits-Abfrage nach "Spiel fortsetzen" war verschoben und
+  abgeschnitten (Fehler des Originals)
 
 ## 5. Credits
 
